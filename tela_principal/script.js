@@ -51,4 +51,3 @@ function atualizarCarrinho() {
       window.location.href = '../carrinho/carrinho.html';
     }
   }
-
