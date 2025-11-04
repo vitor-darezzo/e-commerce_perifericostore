@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PeriféricoStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Cabeçalho -->
+  <header>
+    <a href="../tela_principal/site.html"><img src="../image/logo_perifericos_store_PS_sem_frase_branco.png" alt="PeriféricoStore"></a>    
+    <div class="header-right">
+    <div class="search-bar">
+    <input type="text" placeholder="Pesquisar">
+    <button onclick="buscar()">
+     <img src="../image/lupa.png" alt="Buscar">
+    </button>
+    </div>
+    <nav>
+      <a href="../login/login.html"><img src="../image/Icone.png"></a>
+    </nav>
+    <div class="carrinho-toggle" onclick="toggleCarrinho()"><img src="../image/carrinho_transparente.png"><span id="contador-lateral">0</span>
+    </div>
+  </header>
+
+  <!--Produtos-->
+    <section class="categorias">
+      <button class="btn1" onclick="window.location.href='../Teclados/teclados.html'">Teclados</button>
+      <button class="btn1" onclick="window.location.href='../Mouses/mouse.html'">Mouses</button>
+      <button class="btn1" onclick="window.location.href='../Headsets/headsets.html'">Headsets</button>
+      <button class="btn1" onclick="window.location.href='../Monitores/monitor.html'">Monitores</button>
+      <button class="btn1" onclick="window.location.href='../Mousepad/mousepad.html'">Mousepad</button>
+    </section>
+
+    <section class="produtos">
+    <div class="produto">
+      <img src="../image/mousepad.png" alt="Mouse Gamer">
+      <div class="produto-nome">Logitech Desk Mat Studio Series 30x70 cm</div>
+      <div class="produto-preco">R$ 49,90</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('Logitech Desk Mat Studio Series 30x70 cm', 'R$ 129,90')">Adicionar ao carrinho</button>
+    </div>
+    <div class="produto">
+      <img src="../image/mousepad1.png" alt="Mouse Gamer">
+      <div class="produto-nome">Logitech Desk Mat Studio Series 300x700mm</div>
+      <div class="produto-preco">R$ 185,99</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('Logitech Desk Mat Studio Series 300x700mm', 'R$ 185,99')">Adicionar ao carrinho</button>
+    </div>
+    <div class="produto">
+      <img src="../image/mousepad2.png" alt="Mouse Gamer">
+      <div class="produto-nome">Mousepad Gamer Fallen</div>
+      <div class="produto-preco">R$ 399,90</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('Mousepad Gamer Fallen', 'R$ 399,90')">Adicionar ao carrinho</button>
+    </div>
+    <div class="produto">
+      <img src="../image/Mousepad3.png" alt="Mouse Gamer">
+      <div class="produto-nome">Mousepad Gamer Merak Speed</div>
+      <div class="produto-preco">R$ 69,90</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('Mousepad Gamer Merak Speed', 'R$ 129,90')">Adicionar ao carrinho</button>
+    </div>
+    <div class="produto">
+      <img src="../image/Mousepad4.png" alt="Mouse Gamer">
+      <div class="produto-nome">japanese dragon large gaming mousepad</div>
+      <div class="produto-preco">R$ 189,90</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('japanese dragon large gaming mousepad', 'R$ 189,90')">Adicionar ao carrinho</button>
+    </div>
+    <div class="produto">
+      <img src="../image/mousepad5.png" alt="Mouse Gamer">
+      <div class="produto-nome">Silver Metallic Look Mouse Pad</div>
+      <div class="produto-preco">R$ 149,99</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('Silver Metallic Look Mouse Pad', 'R$ 149,99')">Adicionar ao carrinho</button>
+    </div>
+    <div class="produto">
+      <img src="../image/mousepad6.png" alt="Mouse Gamer">
+      <div class="produto-nome">Gaming Mousepad XXL Lilás</div>
+      <div class="produto-preco">R$ 49,90</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('Gaming Mousepad XXL Lilás', 'R$ 49,90')">Adicionar ao carrinho</button>
+    </div>
+    <div class="produto">
+      <img src="../image/mousepad7.png" alt="Monitor Full HD">
+      <div class="produto-nome">BenQZowie G-SR-SE II (Vermelho)</div>
+      <div class="produto-preco">R$ 199,99</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('BenQZowie G-SR-SE II (Vermelho)', 'R$ 199,99')">Adicionar ao carrinho</button>
+    </div>
+    <div class="produto">
+      <img src="../image/mousepad8.png" alt="Mouse Gamer">
+      <div class="produto-nome">Gaming Mousepad Large Black/Red</div>
+      <div class="produto-preco">R$ 249,99</div>
+      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+      <button class="btn" onclick="adicionarAoCarrinho('Gaming Mousepad Large Black/Red', 'R$ 249,99')">Adicionar ao carrinho</button>
+    </div>
+    </section>
+
+  <!--Carrinho lateral-->
+  <aside id="carrinho" class="carrinho-lateral">
+  <button class="fechar-carrinho" onclick="toggleCarrinho()">✖</button>
+  <div>MEU CARRINHO (<span id="contador-lateral">0</span>)</div>
+  <div id="itens-carrinho" class="itens-carrinho">
+  <p>Seu carrinho está vazio</p>
+  </div>
+  <button class="comprar-carrinho" onclick="finalizarPedido()">Finalizar Pedido</button>
+</aside>
+
+      <!-- RODAPÉ -->
+  <footer>
+    <div>
+    Condições de Uso | Notificação de Privacidade | Cookies | Anúncios Baseados em Interesses
+    </div>
+    <div>
+      © 2025 PeriféricoStore - Todos os direitos reservados
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
