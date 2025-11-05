@@ -35,66 +35,58 @@
       <button class="btn1" onclick="window.location.href='../Mouses/mouse.html'">Mouses</button>
       <button class="btn1" onclick="window.location.href='../Headsets/headsets.html'">Headsets</button>
       <button class="btn1" onclick="window.location.href='../Monitores/monitor.html'">Monitores</button>
-      <button class="btn1" onclick="window.location.href='../Mousepad/mousepad.html'">Mousepad</button>
+      <button class="btn1" onclick="window.location.href='../Mousepad/mousepad.html'">Mousepads</button>
     </section>
 
     <section class="produtos">
-    <div class="produto">
-      <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/peripherals/alienware/peripherals/alienware-trimode-720m-wireless-mouse/assets/mouse-aw720m-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=320&wid=454&qlt=100,1&resMode=sharp2&size=454,320&chrss=full" alt="Mouse Gamer">
-      <div class="produto-nome">Mouse Gamer RGB</div>
-      <div class="produto-preco">R$ 49,90</div>
-      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
-      <button class="btn" onclick="adicionarAoCarrinho('Mouse Gamer RGB', 'R$ 129,90')">Adicionar ao carrinho</button>
-    </div>
-    <div class="produto">
-      <img src="../image/teclado.png" alt="Teclado Mecânico">
-      <div class="produto-nome">Teclado Mecânico</div>
-      <div class="produto-preco">R$ 239,90</div>
-      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
-      <button class="btn" onclick="adicionarAoCarrinho('Mouse Gamer RGB', 'R$ 129,90')">Adicionar ao carrinho</button>
-    </div>
-    <div class="produto">
-      <img src="../image/fone.png" alt="Headset Gamer">
-      <div class="produto-nome">Headset Gamer</div>
-      <div class="produto-preco">R$ 199,90</div>
-      <div class="produto-parcelas">pix ou em até 12x no cartão</div>
-      <button class="btn" onclick="adicionarAoCarrinho('Mouse Gamer RGB', 'R$ 129,90')">Adicionar ao carrinho</button>
-    </div>
-    <div class="produto">
+      <div class="produto">
+        <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/peripherals/alienware/peripherals/alienware-trimode-720m-wireless-mouse/assets/mouse-aw720m-bk-gallery-1.psd?fmt=png-alpha&hei=320&wid=454" alt="Mouse Gamer">
+        <div class="produto-nome">Mouse Gamer RGB</div>
+        <div class="produto-preco">R$ 129,90</div>
+        <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+        <button class="btn" onclick="adicionarAoCarrinho('Mouse Gamer RGB', 'R$ 129,90')">Adicionar ao carrinho</button>
+      </div>
+
+      <div class="produto">
+        <img src="../image/teclado.png" alt="Teclado Mecânico">
+        <div class="produto-nome">Teclado Mecânico</div>
+        <div class="produto-preco">R$ 239,90</div>
+        <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+        <button class="btn" onclick="adicionarAoCarrinho('Teclado Mecânico', 'R$ 239,90')">Adicionar ao carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="../image/headset.png" alt="Headset Gamer">
+        <div class="produto-nome">Headset Gamer</div>
+        <div class="produto-preco">R$ 199,90</div>
+        <div class="produto-parcelas">pix ou em até 12x no cartão</div>
+        <button class="btn" onclick="adicionarAoCarrinho('Headset Gamer', 'R$ 199,90')">Adicionar ao carrinho</button>
+      </div>
+      <div class="produto">
       <img src="../image/monitor.png" alt="Monitor Full HD">
       <div class="produto-nome">Monitor ips 24" full hd</div>
       <div class="produto-preco">R$ 799,90</div>
       <div class="produto-parcelas">pix ou em até 12x no cartão</div>
-      <button class="btn" onclick="adicionarAoCarrinho('Mouse Gamer RGB', 'R$ 129,90')">Adicionar ao carrinho</button>
+      <button class="btn" onclick="adicionarAoCarrinho('Mouse Gamer RGB', 'R$ 799,90')">Adicionar ao carrinho</button>
     </div>
     <div class="produto">
       <img src="../image/mousepad7.png" alt="Monitor Full HD">
       <div class="produto-nome">BenQZowie G-SR-SE II (Vermelho)</div>
-      <div class="produto-preco">R$ 199,99</div>
+      <div class="produto-preco">R$ 149,99</div>
       <div class="produto-parcelas">pix ou em até 12x no cartão</div>
-      <button class="btn" onclick="adicionarAoCarrinho('BenQZowie G-SR-SE II (Vermelho)', 'R$ 199,99')">Adicionar ao carrinho</button>
+      <button class="btn" onclick="adicionarAoCarrinho('BenQZowie G-SR-SE II (Vermelho)', 'R$ 149,99')">Adicionar ao carrinho</button>
     </div>
-    </section>
-
-    <section class="beneficios">
-      <ul>
-        <li>✔ Frete grátis acima de R$ 300</li>
-        <li>✔ Garantia de 1 ano em todos os produtos</li>
-        <li>✔ Atendimento rápido via WhatsApp</li>
-      </ul>
     </section>
   </main>
 
-
-    <!--Carrinho lateral-->
+  <!-- Carrinho lateral -->
   <aside id="carrinho" class="carrinho-lateral">
-  <button class="fechar-carrinho" onclick="toggleCarrinho()">✖</button>
-  <div>MEU CARRINHO (<span id="contador-lateral">0</span>)</div>
-  <div id="itens-carrinho" class="itens-carrinho">
-  <p>Seu carrinho está vazio</p>
-  </div>
-  <button class="comprar-carrinho" onclick="finalizarPedido()">Finalizar Pedido</button>
-</aside>
+    <button class="fechar-carrinho" onclick="toggleCarrinho()">✖</button>
+    <div>MEU CARRINHO (<span id="contador-lateral">0</span>)</div>
+    <div id="itens-carrinho" class="itens-carrinho">
+      <p>Seu carrinho está vazio</p>
+    </div>
+    <button class="comprar-carrinho" onclick="finalizarPedido()">Finalizar Pedido</button>
+  </aside>
 
      <!-- RODAPÉ -->
   <footer class="footer">
