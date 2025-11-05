@@ -256,6 +256,13 @@
       overflow-y: auto;
       border-left: 2px solid #1b3a70;
     }
+    .itens-carrinho button {
+  transition: background 0.2s;
+}
+.itens-carrinho button:hover {
+  background: #444;
+}
+
 
     .carrinho-lateral.aberto {
       right: 0;
