@@ -60,6 +60,24 @@ h2, h3 {
   background-color: #e8f1ff;
 }
 
+#payment-form {
+  margin-top: 15px;
+}
+
+#payment-form label {
+  display: block;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+#payment-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 4px;
+}
+
 .btn {
   background: #0077ff;
   color: #fff;
@@ -70,6 +88,7 @@ h2, h3 {
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+  margin-top: 15px;
 }
 
 .btn:hover {

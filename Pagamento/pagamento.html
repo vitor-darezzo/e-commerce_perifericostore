@@ -4,38 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagamento | PeriféricoStore</title>
-  <link rel="stylesheet" href="pagamento.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="checkout-container">
     <h2>Resumo do Pedido</h2>
+
+    <!-- Itens do carrinho -->
     <div class="cart-items" id="cart-items"></div>
 
+    <!-- Resumo -->
     <div class="summary">
-      <p><strong>Frete:</strong> <span id="frete">R$ 25,00</span></p>
+      <p><strong>Frete:</strong> <span id="frete">R$ 0,00</span></p>
       <hr>
       <p><strong>Total:</strong> <span id="total">R$ 0,00</span></p>
     </div>
 
     <h3>Método de Pagamento</h3>
+
+    <!-- Métodos -->
     <div class="payment-methods">
       <div class="method active" data-method="cartao">💳 Cartão</div>
       <div class="method" data-method="pix">⚡ Pix</div>
-      <div class="method" data-method="boleto">📄 Boleto</div>
     </div>
 
-    <div id="payment-form">
-      <label>Número do Cartão</label>
-      <input type="text" placeholder="**** **** **** 1234">
-      <label>Validade</label>
-      <input type="text" placeholder="MM/AA">
-      <label>CVV</label>
-      <input type="text" placeholder="***">
-    </div>
+    <!-- Formulário de pagamento -->
+    <div id="payment-form"></div>
 
-    <button class="btn">Confirmar Pagamento</button>
+    <button class="btn" id="confirmar">Confirmar Pagamento</button>
   </div>
 
-  <script src="pagamento.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
