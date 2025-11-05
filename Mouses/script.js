@@ -93,7 +93,7 @@ function finalizarPedido() {
   const quantidade = parseInt(contadorLateralEl.textContent);
 
   if (quantidade > 0) {
-    window.location.href = '../cartão/cartao.html';
+    window.location.href = '../Pagamento/pagamento.html';
   } else {
     window.location.href = '../carrinho/carrinho.html';
   }
